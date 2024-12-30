@@ -1,0 +1,56 @@
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Sticky Header Styles */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0047AB;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.sticky-header .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.sticky-header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Content Section Styles */
+.content-section {
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f3f4f6, #e3e4e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add some spacing between sections */
+.content-section:nth-child(even) {
+    background: #e3e4e8;
+}
